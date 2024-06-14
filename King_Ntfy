@@ -3,11 +3,11 @@
 # Instagram: WildInsect_
 # Happy Hacking :)
 # X: Wild1nsect
-
+########################################################
 #!/bin/bash
 
 while getopts u:i: flag
-do
+do 
     case "${flag}"
         in
         u)username=${OPTARG};;
@@ -22,14 +22,16 @@ fi
 
 while true;
 do
-output=$(curl -sL http://$ip:9999)
+ output=$(curl -sL http://$ip:9999)
 if [ "$output" != "$username" ]; then
-   echo "IP: $ip"
-   curl -sL http://$ip:9999 | figlet -f small | lolcat
-   paplay alarm.wav      #you can also add other sound by replacing the sound file 
-   sleep 1
-   clear
-else
-    echo "IP: $ip" ;curl -sL http://$ip:9999 | figlet -f small | lolcat
+    echo "IP: $ip"
+    curl -sL http://$ip:9999 | figlet -f Cybermedium | lolcat
+    paplay alarm.wav
     sleep 1
     clear
+else
+	echo "IP: $ip" ;curl -sL http://$ip:9999 | figlet -f Cybermedium | lolcat
+	sleep 1
+	clear
+fi
+done
