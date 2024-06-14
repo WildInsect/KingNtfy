@@ -1,22 +1,35 @@
+# Created by WildInsect
+# TryHackMe: WildInsect
+# Instagram: WildInsect_
+# Happy Hacking :)
+# X: Wild1nsect
+
 #!/bin/bash
 
-username=$1
-ip=$2
-echo "IP: $ip"
-while true ;
+while getopts u:i: flag
+do
+    case "${flag}"
+        in
+        u)username=${OPTARG};;
+        i)ip=${OPTARG};;
+    esac
+done
+
+if [ -z "$username" ] || [ -z "$ip" ] ; then
+  echo -e "\033[32m Usage: $0 -u <You_Username> -i <KOTH IP>\033[0m"
+  exit 1
+fi
+
+while true;
 do
 output=$(curl -sL http://$ip:9999)
-
 if [ "$output" != "$username" ]; then
-   echo "IP: $2"
+   echo "IP: $ip"
    curl -sL http://$ip:9999 | figlet -f small | lolcat
-   paplay alarm.wav
+   paplay alarm.wav      #you can also add other sound by replacing the sound file 
    sleep 1
    clear
 else
-	echo "IP: $ip";curl -sL http://$ip:9999 | figlet -f small | lolcat
-	sleep 1
-	clear
-	
-fi
-done
+    echo "IP: $ip" ;curl -sL http://$ip:9999 | figlet -f small | lolcat
+    sleep 1
+    clear
