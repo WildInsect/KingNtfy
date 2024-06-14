@@ -12,6 +12,6 @@ This script helps you in the King of the Hill game. It notifies you about the ki
 ```
 git clone https://github.com/WildInsect/KingNtfy
 cd KingNtfy
-chmod +x KingNtfy
-./KingNtfy -u <Your_UserName> -i <KOTH_MACHINE_IP>
+chmod +x King_Ntfy
+./King_Ntfy -u <Your_UserName> -i <KOTH_MACHINE_IP>
 ```
