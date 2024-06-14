@@ -1,0 +1,22 @@
+#!/bin/bash
+
+expected_output=$1
+ip=$2
+echo "IP: $ip"
+while true ;
+do
+output=$(curl -sL http://$ip:9999)
+
+if [ "$output" != "$expected_output" ]; then
+   echo "IP: $2"
+   curl -sL http://$ip:9999 | figlet -f Cybermedium
+   paplay alarm.wav
+   sleep 1
+   clear
+else
+	echo "IP: $ip";curl -sL http://$ip:9999 | figlet -f Cybermedium
+	sleep 1
+	clear
+	
+fi
+done
