@@ -1,4 +1,9 @@
 # KingNtfy
+Requirements
+```
+1: figlet
+2: paplay
+```
 HOW TO USE:
 ```
 git clone https://github.com/WildInsect/KingNtfy
