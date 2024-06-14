@@ -1,7 +1,8 @@
 # KingNtfy
-Requirements
+Prerequirements
 ```
 1: figlet
+2: lolcat
 2: paplay
 ```
 HOW TO USE:
