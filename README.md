@@ -4,9 +4,9 @@ This script helps you in the King of the Hill game. It notifies you about the ki
 
 ## Prerequirements
 ```
-1: figlet
-2: lolcat
-2: paplay
+(1). figlet
+(2). lolcat
+(3). paplay
 ```
 ## How to Use:
 ```
