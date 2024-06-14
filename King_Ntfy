@@ -25,12 +25,12 @@ do
  output=$(curl -sL http://$ip:9999)
 if [ "$output" != "$username" ]; then
     echo "IP: $ip"
-    curl -sL http://$ip:9999 | figlet -f Cybermedium | lolcat
+    curl -sL http://$ip:9999 | figlet -f small | lolcat
     paplay alarm.wav
     sleep 1
     clear
 else
-	echo "IP: $ip" ;curl -sL http://$ip:9999 | figlet -f Cybermedium | lolcat
+	echo "IP: $ip" ;curl -sL http://$ip:9999 | figlet -f small | lolcat
 	sleep 1
 	clear
 fi
