@@ -1,6 +1,6 @@
 # KingNtfy
 ---
-This script helps you in the King of the Hill game, it nofify you about king, if given username is the king the its just show the king if the give username is not king its play the alarm sound to notify you.
+This script helps you in the King of the Hill game. It notifies you about the king, if the given username is the king, it just shows that username as the king, if the given username is not the king, it plays an alarm sound to notify you and also shows who the new king is.
 ---
 Prerequirements
 ```
