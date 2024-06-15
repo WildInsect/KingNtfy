@@ -25,7 +25,7 @@ do
  output=$(curl -sL http://$ip:9999)
 if [ "$output" != "$username" ]; then
     echo "IP: $ip"
-    echo $output | figlet -f small | lolcat
+    echo -e "\033[31m$(figlet $output)\033[0m "
     paplay alarm.wav
     sleep 1
     clear
