@@ -6,7 +6,7 @@ This script helps you in the King of the Hill game. It notifies you about the ki
 ```
 sudo apt install lolcat figlet pulseaudio-utils
 ```
-## Uses:
+## Usage:
 ```
 git clone https://github.com/WildInsect/KingNtfy
 cd KingNtfy
