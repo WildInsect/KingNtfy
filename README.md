@@ -13,3 +13,5 @@ cd KingNtfy
 chmod +x King_Ntfy
 ./King_Ntfy -u <Your_UserName> -i <KOTH_Machine_IP>
 ```
+https://github.com/WildInsect/KingNtfy/assets/116131489/5e188b4e-5a69-46bd-a7bb-6faf7b2b3a26
+
